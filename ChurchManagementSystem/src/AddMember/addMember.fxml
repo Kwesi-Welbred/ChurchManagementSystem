@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="container" prefHeight="584.0" prefWidth="693.0" style="-fx-background-color: #2B2B2B;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AddMember.addMembercontroller">
+   <children>
+      <VBox fx:id="vbox" layoutX="12.0" layoutY="39.0" prefHeight="437.0" prefWidth="474.0" spacing="5.0" style="-fx-background-color: transparent;" AnchorPane.bottomAnchor="108.0" AnchorPane.leftAnchor="12.0" AnchorPane.rightAnchor="207.0" AnchorPane.topAnchor="39.0">
+         <children>
+            <JFXTextField fx:id="id" labelFloat="true" promptText="Id" styleClass="jfx-text-field" stylesheets="@../Resources/Project.css" unFocusColor="#361212">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="20.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="surname" labelFloat="true" promptText="Surname" stylesheets="@../Resources/Project.css" unFocusColor="#2f0d0d">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="middlename" labelFloat="true" layoutX="10.0" layoutY="20.0" promptText="Middle name" stylesheets="@../Resources/Project.css" unFocusColor="#2f0d0d">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+            </JFXTextField>
+            <JFXTextField fx:id="firstname" labelFloat="true" layoutX="10.0" layoutY="20.0" promptText="Firstname" stylesheets="@../Resources/Project.css" unFocusColor="#2f0d0d">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+            </JFXTextField>
+            <DatePicker fx:id="dob" prefHeight="25.0" prefWidth="467.0" promptText="DOB" showWeekNumbers="true" stylesheets="@../Resources/jfx-controls-css/jfx-date-picker.css">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+               <styleClass>
+                  <String fx:value="jfx-date-picker" />
+                  <String fx:value="data-picker-list-cell" />
+                  <String fx:value="date-picker-list-view" />
+                  <String fx:value="arrow-button" />
+               </styleClass>
+            </DatePicker>
+            <Label fx:id="location" lineSpacing="5.0" prefHeight="17.0" prefWidth="100.0" text="Location" textFill="#e1dddd">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="10.0" top="20.0" />
+               </VBox.margin>
+            </Label>
+            <HBox alignment="CENTER">
+               <children>
+                  <JFXComboBox fx:id="country" labelFloat="true" prefHeight="25.0" prefWidth="145.0" promptText="Country" styleClass="jfx-combo-box" stylesheets="@../Resources/jfx-controls-css/jfx-combo-box.css" />
+                  <JFXComboBox fx:id="city" labelFloat="true" layoutX="10.0" layoutY="10.0" prefHeight="25.0" prefWidth="145.0" promptText="City/Region" />
+                  <JFXComboBox fx:id="Town" labelFloat="true" layoutX="155.0" layoutY="10.0" prefHeight="25.0" prefWidth="145.0" promptText="Town/Area" />
+               </children>
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+            </HBox>
+         </children></VBox>
+      <JFXButton fx:id="img" buttonType="RAISED" contentDisplay="TOP" layoutX="508.0" layoutY="37.0" lineSpacing="5.0" prefHeight="147.0" prefWidth="171.0" ripplerFill="#542b2b" styleClass="jfx-button" stylesheets="@../Resources/Project.css" text="Add Image" textFill="#dddbdb" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="37.0">
+         <graphic>
+            <FontAwesomeIconView glyphName="USER_PLUS" size="50" />
+         </graphic>
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></JFXButton>
+      <HBox alignment="CENTER" layoutX="10.0" layoutY="484.0" prefHeight="62.0" prefWidth="671.0" spacing="50.0" AnchorPane.leftAnchor="12.0" AnchorPane.rightAnchor="12.0" AnchorPane.topAnchor="484.0">
+         <children>
+            <JFXButton buttonType="RAISED" prefHeight="72.0" prefWidth="284.0" ripplerFill="#d3a0a0" styleClass="jfx-button" stylesheets="@../Resources/Project.css" text="Save" textFill="#e1dede">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="10.0" layoutY="10.0" prefHeight="72.0" prefWidth="284.0" ripplerFill="#d3a0a0" styleClass="jfx-button" stylesheets="@../Resources/Project.css" text="Cancel" textFill="#e1dede">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

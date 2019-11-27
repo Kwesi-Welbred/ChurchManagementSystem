@@ -1,0 +1,108 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jul 21, 2019, 10:31:53 PM
+    Author     : Kwesi-Welbred
+*/
+
+//.....................................jfx-button.css
+.jfx-button {
+    -fx-background-color: #889A2C;
+    -fx-background-radius: 3px;
+    -fx-background-insets: 2px;
+    -fx-text-fill: white;
+}
+.jfx-button:armed{
+    -fx-background-color:#204855
+}
+.jfx-button:hover{
+    -fx-background-color:#25466C;
+}
+.jfx-button:focused{
+    -fx-background-color:#744855;
+    -fx-text-fill: black;
+}
+
+
+//......................................pane.css
+.pane{
+-fx-background-color:#2B2B2B;
+}
+.pane:pressed{
+-fx-background-color:#2B2B2B, #7T1113, #325769;
+}
+.pane:hover{
+-fx-background-color:#7T1113;
+}
+
+
+//..................................AnchorPane.css
+.AnchorPane{
+ -fx-background-color:#2B2B2B;
+}
+
+//..................................label.css
+
+.label{
+-fx-background-color: TRANSPARENT;
+-fx-text-fill: white;
+}
+
+//..............................GridPane.css
+.GridPane{
+-fx-background-color:TRANSPARENT;
+}
+
+//...............................jfx-text-field
+.jfx-text-field,
+.jfx-text-field:focused{
+    -fx-background-color: TRANSPARENT, TRANSPARENT, TRANSPARENT;
+    -fx-prompt-text-fill: WHITE;
+    -fx-text-fill: WHITE;
+    -jfx-focus-color: #4059a9;
+    -jfx-unfocus-color: #2f0d0d;
+    -fx-padding: 0.333333em 0 0.333333em 0;
+}
+
+.jfx-text-field > .input-line {
+    -fx-background-color: -jfx-unfocus-color;
+    -fx-pref-height: 1px;
+    -fx-translate-y: 1px;
+}
+
+.jfx-text-field > .input-focused-line {
+    -fx-background-color: -jfx-focus-color;
+    -fx-pref-height: 2px;
+}
+
+.jfx-text-field .error-label {
+    -fx-text-fill: #D34336;
+}
+
+.jfx-text-field .error-icon {
+    -fx-fill: #D34336;
+}
+
+//..................................Table view................................
+.table-view{
+-fx-background-color: transparent;
+    -fx-table-view-color: rgba(82, 100, 174, 0.4);
+    -fx-table-view-rippler-color: rgba(82, 100, 174, 0.6);
+    -fx-header-color: #949494;
+    -fx-text-fill:white;
+}
+.table-view:focused{
+    -fx-background-color: TRANSPARENT, -fx-box-border, -fx-control-inner-background;
+    -fx-background-insets: -1.4, 0, 1;
+    -fx-background-radius: 1.4, 0, 0;
+    -fx-padding: 1; /* 0.083333em; */
+    -fx-text-fill:black;
+}
+.table-view .column-header,
+.table-view .column-header-background,
+.table-view .column-header-background .filler {
+    -fx-background-color: #744855;
+}
